@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore>
+	
+	<book id="1" category="COOKING">
+		<title lang="EN">Everyday Italian</title>
+		<author>Giada De Laurentiis</author>
+		<year>2005</year> 
+		<price>8 530</price>
+		<photo>everyday-italian.jpg</photo>
+		
+	</book>
+	
+	<book id="2" category="WEB">
+		<title lang="EN">XQuery Kick Start</title>
+		<author>James McGovern</author>
+		<author>Per Bothner</author>
+		<author>Kurt Cagle</author>
+		<author>James Linn</author>
+		<author>Vaidyanathan Nagarajan</author>
+		<year>2003</year>
+		<price>21 042</price>
+		<photo>xQuery-kick-start.jpg</photo>
+	</book>
+	
+	
+	<book id="3" category="POLITIQUE">
+		<title lang="FR">La Russie selon Poutine</title>
+		<author>Anna Politkovskaia</author>
+		<year>2005</year>
+		<price>7 215</price>
+		<photo>la-russie-selon-poutine.jpg</photo>
+	</book>
+
+	<book id="4" category="COMPUTER">
+		<title lang="FR">Calculabilité, complexité et langues</title>
+		<author>Martin Davis</author>
+		<year>2017</year>
+		<price>36 397</price>
+		<photo>calculabilite-complexite-et-langues.jpg</photo>
+	</book>
+	
+	<book id="5" category="DANSE/MUSIC">
+		<title lang="FR">Le livre de la salsa</title>
+		<author>César Rondón</author>
+		<year>1979</year>
+		<price>22 958</price>
+		<photo>le-livre-de-la-salsa.jpg</photo>
+	</book>
+	
+	<book id="6" category="SOCIALE">
+		<title lang="FR">Ô Mali ! Ô Ma patrie !</title>
+		<author>Oumar Aba Traoré</author>
+		<year>2021</year>
+		<price>13 119</price>
+		<photo>o-mali-o-ma-patrie.jpg</photo>
+	</book>
+	
+	<book id="7" category="RESEAUX">
+		<title lang="FR">Réseaux sans fil amateurs</title>
+		<author>Rob Flickenger</author>
+		<year>2003</year>
+		<price>3 279</price>
+		<photo>reseaux-sans-fil-amateurs.jpg</photo>
+	</book>
+	
+	<book id="8" category="DROIT">
+		<title lang="FR">Droit du Travail au Mali</title>
+		<author>Daouda Ba</author>
+		<year>2021</year>
+		<price>20 990</price>
+		<photo>droit-du-travail-au-mali.jpg</photo>
+	</book>
+
+	<book id="9" category="ENFANTS">
+		<title lang="en">The Monsters' Monster</title>
+		<author>Patrick McDonnell</author>
+		<year>2012</year>
+		<price>13 119</price>
+		<photo>the-monsters-monster.jpg</photo>
+	</book>
+	
+	<book id="10" category="SPORT">
+		<title lang="FR">L'Histoire du football africain</title>
+		<author>Said El Abadi</author>
+		<year>2025</year>
+		<price>14 431</price>
+		<photo>histoire-du-football-africain.jpg</photo>
+	</book>
+</bookstore>

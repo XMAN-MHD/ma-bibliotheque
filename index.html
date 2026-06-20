@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Bibliothèque</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header class="app-header">
+            <div>
+                <h1>📚 Ma Bibliothèque</h1>
+                <p>Gérez et explorez vos livres en toute simplicité.</p>
+            </div>
+            <button type="button" id="addBookBtn" class="btn btn-primary">Ajouter un livre</button>
+        </header>
+        <section class="toolbar" aria-label="Recherche et filtres">
+            <div class="field">
+                <label for="searchInput">Recherche</label>
+                <input type="search" id="searchInput" placeholder="Titre, auteur ou catégorie">
+            </div>
+
+            <div class="field">
+                <label for="categoryFilter">Catégorie</label>
+                <select id="categoryFilter">
+                    <option value="">Toutes les catégories</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="table-section" aria-labelledby="booksTitle">
+            <div class="section-title">
+                <h2 id="booksTitle">Livres</h2>
+                <span id="booksCount">0 livre</span>
+            </div>
+            <div id="booksGrid" class="books-grid">
+            </div>
+
+            <div class="pagination" id="pagination"></div>
+        </section>
+    </main>
+
+    <div class="modal" id="detailsModal" hidden>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Détails du livre</h2>
+                <button type="button" class="closeModalBtn" data-close-modal="detailsModal">×</button>
+            </div>
+            <div id="detailsContent"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="bookFormModal" hidden>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="formTitle">Ajouter un livre</h2>
+                <button type="button" class="closeModalBtn" data-close-modal="bookFormModal">×</button>
+            </div>
+
+            <form id="bookForm">
+                <input type="hidden" id="bookId">
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="bookTitle">Titre</label>
+                        <input type="text" id="bookTitle" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="bookAuthor">Auteur</label>
+                        <input type="text" id="bookAuthor" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="bookCategory">Catégorie</label>
+                        <select id="bookCategory" required>
+                            
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="bookYear">Année</label>
+                        <input type="number" id="bookYear" min="0" max="2100" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="bookPrice">Prix</label>
+                        <input type="number" id="bookPrice" min="0" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="bookPhoto">Photo</label>
+                        <input type="text" placeholder="ex: book.jpg" id="bookPhoto" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn" data-close-modal="bookFormModal">Annuler</button>
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="app-footer">
+    <div class="footer-content">
+        <p>📚 Ma Bibliothèque</p>
+        <span>Projet JavaScript Avancé — Université Numérique Cheikh Hamdou Kane</span>
+    </div>
+</footer>
+    <script type="module" src="js/app.js"></script>
+    <div id="toastContainer" class="toast-container"></div>
+</body>
+</html>
